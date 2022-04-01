@@ -1,0 +1,248 @@
+/* header */
+header{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-brand i{
+    color: green;
+}
+
+.navbar-brand span{
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-nav .nav-item{
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-item::after{
+    content: "";
+    height: 5px;
+    width: 0;
+    display: block;
+    background-color: #35a22c;
+    transition: all 0.5s;
+}
+
+.navbar-nav .nav-item.active::after{
+    width: 100%;
+}
+
+.navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+
+.navbar-nav .nav-item.active a{
+    color: #35a22c !important;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-item:hover .nav-link{
+    color: #35a22c;
+}
+
+/* carousel */
+.carousel__fillter{
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner .carousel-item{
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.carousel-item:nth-child(1){
+    background-image: url(./../images/finland.jpg);
+    
+}
+.carousel-item:nth-child(2){
+    background-image: url(./../images/mountains.jpg);
+}
+.carousel-item:nth-child(3){
+    background-image: url(./../images/mountains-1.jpg);
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img__thumb{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.carousel-indicators li{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.carousel-caption h3{
+    font-size: 50px;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+}
+
+.h5, h5 {
+    font-size: 1.20rem !important;
+}
+
+.projects__item {
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 0.4rem rgb(0 0 0 / 13%);
+    border: none;
+    cursor: pointer;
+}
+
+.project__card{
+    margin: 0 auto;
+}
+
+#Project .nav-pills .nav-link.active{
+    background-color: #35a22c;
+    border: 1px solid #35a22c;
+}
+
+#Project .nav-item .nav-link{
+    color: black;
+}
+
+#Project .nav-item .nav-link{
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.col-4 .card{
+    transition: all 1s;
+}
+
+.card-body h5{
+    transition: all 1s;
+}
+
+.col-4 .card:hover {
+    border: 1px solid #35a22c;
+}
+
+.col-4 .card:hover .card-body h5{
+    color: #35a22c;
+}
+
+#Available{
+    background-image: url(./../images/3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: 40%;
+}
+
+.Available__fillter{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.Available__title{
+    color: white;
+}
+
+.card-group .card{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.card-group .card .card-body{
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    background-color: rgba(255, 255, 255, 0.123);
+    color: white;
+    transition: all 0.5s;
+}
+
+.card-group .card:hover .card-body{
+    background-color: black;
+    border: 1px solid white;
+}
+
+#Achievement{
+    background-image: url(./../images/memphis_3.png);
+    background-size: 40% auto;
+    background-position: bottom left;
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+}
+
+.Achievement__fillter{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Achievement__left{
+    box-shadow: 1px 1px 50px 5px rgba(170, 170, 170, 0.336);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
+.Achievement__left p{
+    font-size: 15px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+}
+
+footer div i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px !important;
+    color: grey;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid grey;
+    margin-right: 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+footer div p, hr{
+    color: grey;
+}
+
+footer div i:hover{
+    border: 2px solid #35a22c;
+    color: #35a22c;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption p{ 
+        font-size: 15px;
+    }
+    .carousel-caption h3{ 
+        font-size: 30px;
+    }
+    .img__thumb img{
+        width: 50%;
+    }
+}
+
+.project__content .nav-item{
+    margin-bottom: 20px;
+}
+
+.navbar-toggler{
+    background-color: green !important;
+}
